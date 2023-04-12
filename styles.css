@@ -1,0 +1,144 @@
+*,
+::before
+::after {
+    box-sizing: border-box;
+    /* 1 */
+    border-width: 0;
+    /* 2 */
+    border-width: solid;
+    /* 2 */
+    border-color: #e5e7eb;
+    /* 2 */
+}
+/* codigo para normalizar mi pagina en el navegador (arriba) */
+
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+    padding-top: 6rem;
+}
+
+h2, h1, p {
+    margin: 0;
+
+}
+
+#nav-bar-icon {
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    transition: all 0.2s ease-in-out;
+
+    
+}
+
+#nav-bar-icon:hover {
+    background-color: #e5e7eb;
+}
+
+#nav-bar-container {
+    display: none;
+    gap: 1rem;
+  
+}
+
+#nav-bar {
+    background-color:#172554 ;
+    color: #eff6ff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    height: 4rem;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+
+
+}
+
+.nav-bar-link {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-bar-link:hover {
+text-decoration:underline 
+
+}
+
+
+#main-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    pad: 1rem;
+}
+
+
+
+#main-desc-container { 
+   width: 50%;
+}
+
+#main-title {
+    text-align: center;
+}
+
+#main-desc {
+    text-align: justify;
+}
+
+#main-link {
+    text-align: center;
+}
+
+#title {
+    color: #172554;
+}
+
+#img-container {
+    display: none;
+}
+
+
+@media (min-width: 750px){
+    #nav-bar-icon{
+        display: none;
+
+    }
+
+    #nav-bar-container{
+        display: flex;
+
+    }
+
+    #img-container {
+        display:block; 
+        width: 50%;
+    }
+#main-desc-container { 
+   width: 50%;
+}
+
+#main-container {
+    flex-direction: row;
+    gap: 2rem;
+}
+/* gap sirve para separar textos  */
+
+img {
+    width: 100%;
+}
+
+
+
+}
+
+
